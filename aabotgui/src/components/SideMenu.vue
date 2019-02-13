@@ -27,19 +27,24 @@
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
+        
+          <v-btn @click="$emit('toggle')"> Toggle Dark Mode   
+            <v-icon right>brightness_4</v-icon>
+            </v-btn>
   </v-navigation-drawer>
 </template>
 
 <script>
   export default {
+    props: ['dark'],
     data () {
       return {
         items: [
-          { title: 'Home', icon: 'dashboard' },
-          { title: 'About', icon: 'question_answer' },
-          { title: 'benis', icon: 'accessible'}
+          { title: 'Main Dashboard', icon: 'dashboard' },
+          { title: 'SRE Dashboard', icon: 'people' },
+          { title: 'Action Dashboard', icon: 'check_circle_outline'},
         ],
-        right: null
+        right: null,
       }
     }
   }

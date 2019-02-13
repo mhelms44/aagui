@@ -1,14 +1,13 @@
 <template>
   <v-app :dark ='blah'>
-    <side-menu/>
+    <side-menu @toggle="blah = !blah"/>
     <v-content>
-      <hello-thar/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import MyMenu from './components/SideMenu'
+import SideMenu from './components/SideMenu'
 
 export default {
   name: 'App',
@@ -17,7 +16,7 @@ export default {
   },
   data () {
     return {
-      blah:true
+      blah:false
     }
   }
 }

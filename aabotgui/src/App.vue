@@ -2,6 +2,7 @@
   <v-app :dark ='blah'>
     <side-menu @toggle="blah = !blah"/>
     <v-content>
+      <router-view></router-view>
     </v-content>
   </v-app>
 </template>

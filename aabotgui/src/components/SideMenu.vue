@@ -27,9 +27,8 @@
         </v-list-tile-content>
       </v-list-tile>
     </v-list>
-        
-          <v-btn @click="$emit('toggle')"> Toggle Dark Mode   
-            <v-icon right>brightness_4</v-icon>
+          <v-btn @click="$emit('toggle')" flat icon>
+            <v-icon>brightness_4</v-icon>
             </v-btn>
   </v-navigation-drawer>
 </template>
